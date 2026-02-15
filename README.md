@@ -70,7 +70,7 @@
 ## Installation
 
 ### Quick Install
-1. Download the [latest release](https://github.com/AnthonyDac/amoled-dark-minimalistic/releases) or clone this repo
+1. Download the [latest release](https://github.com/c4g7-dev/amoled-dark-minimalistic/releases) or clone this repo
 2. Copy the folder to your TeamSpeak extensions directory:
    ```
    ~/.config/TeamSpeak/Default/extensions/
@@ -81,7 +81,7 @@
 ### Manual / Git
 ```bash
 cd ~/.config/TeamSpeak/Default/extensions/
-git clone https://github.com/AnthonyDac/amoled-dark-minimalistic.git
+git clone https://github.com/c4g7-dev/amoled-dark-minimalistic.git
 ```
 Restart TeamSpeak and activate the theme in Settings → Appearance.
 
@@ -129,5 +129,5 @@ Pull requests and issues are welcome. To add a new color variant:
 ---
 
 <p align="center">
-  <sub>Made with 🖤 by <a href="https://github.com/AnthonyDac">Valhalla</a></sub>
+  <sub>Made with 🖤 by <a href="https://github.com/c4g7-dev">Valhalla</a></sub>
 </p>
