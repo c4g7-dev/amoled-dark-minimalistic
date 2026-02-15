@@ -1,0 +1,16 @@
+@import url(TeamSpeak.css);
+@import url(Glassmorphism.css);
+
+/* AMOLED Dark — Indigo accent */
+:root,
+::after,
+::before {
+     --custom-color-accent-light: #5555b0;
+     --custom-color-accent-dark: #3d3d80;
+     --custom-color-accent-light-t: rgba(85, 85, 176, 0.12);
+     --custom-color-accent-dark-t: rgba(61, 61, 128, 0.08);
+     --custom-color-slider1: #5555b0;
+     --custom-color-slider2: #3d3d80;
+}
+}
+

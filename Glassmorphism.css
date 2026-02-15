@@ -1,0 +1,99 @@
+/*
+ *  AMOLED Dark — Minimal Surface Overrides
+ *  No glassmorphism, no blur, no gradients — just pure flat dark surfaces.
+ */
+
+/* ── Sidebar — flat black ── */
+.tsv-sidebar .tsv-body-background {
+  background: #000000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ── Headers / banners — flat ── */
+.tsv-view-banner .tsv-view-background,
+.tsv-view-header,
+.ts-server-header,
+.ts-new-header-bg {
+  background: #000000 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #1a1a1a !important;
+  border-radius: 0 !important;
+}
+
+/* ── Dashboard panels ── */
+.tsv-dashboard-servers__content,
+.tsv-dashboard-chats,
+.tsv-dashboard-news,
+.ts-discovery-wrapper {
+  background: #000000 !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+/* ── Cards and previews ── */
+.tsv-card,
+.tsv-preview,
+.tsv-deviant,
+.tsv-highlight-header {
+  background: #0a0a0a !important;
+  border: 1px solid #1a1a1a !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* ── Chat input ── */
+.ts-chat-input-container {
+  background-color: #0a0a0a !important;
+  border: 1px solid #1a1a1a !important;
+  box-shadow: none !important;
+  border-radius: 6px !important;
+}
+.ts-chat-input-container.focus,
+.ts-chat-input-container:hover {
+  background-color: #0d0d0d !important;
+  box-shadow: none !important;
+  border-color: #222222 !important;
+}
+
+/* ── Chat bubbles ── */
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble {
+  background: #0a0a0a !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble::before {
+  border-right-color: #0a0a0a !important;
+}
+
+/* ── Attachments ── */
+.ts-chat-message-attachment .ts-chat-message-attachment-inner {
+  background: #0a0a0a !important;
+  border-color: #1a1a1a !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* ── Context menus ── */
+.tsv-context-menu,
+.ts-context-menu,
+.menu,
+.ts-tooltip {
+  background: #0d0d0d !important;
+  border: 1px solid #1a1a1a !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 6px !important;
+}
+
+/* ── Variable overrides ── */
+:root,
+::before,
+::after {
+  --tsv-context-menu-border: #1a1a1a !important;
+  --ts-context-menu-background: #0d0d0d !important;
+  --card-background: #0a0a0a !important;
+  --card-hover-background: #111111 !important;
+  --tsv-preview-bg: #0a0a0a !important;
+}

@@ -1,0 +1,103 @@
+{
+    "name": "AMOLED Dark Minimalistic",
+    "description": "A pure-black AMOLED minimalistic theme for TeamSpeak.",
+    "version": "1.3.0",
+    "identifier": "amoled.dark.minimalistic",
+    "engines": {
+        "teamspeak": 1
+    },
+    "repository": {
+        "url": "https://github.com/AnthonyDac/amoled-dark-minimalistic",
+        "directory": "amoled-dark-minimalistic",
+        "type": "git"
+    },
+    "image": "Thumbnail.png",
+    "license": "MIT",
+    "author": {
+        "name": "Valhalla",
+        "email": "anthony.dac@hotmail.fr",
+        "userTag": "TeamSpeak@myteamspeak.com"
+    },
+    "content": {
+        "themes": [
+            {
+                "name": "AMOLED Dark",
+                "source": "Reaper.css",
+                "image": "Reaper.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Blue",
+                "source": "Blue.css",
+                "image": "Blue.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Pink",
+                "source": "Pink.css",
+                "image": "Pink.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Purple",
+                "source": "Purple.css",
+                "image": "Purple.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Orange",
+                "source": "Orange.css",
+                "image": "Orange.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Green",
+                "source": "Green.css",
+                "image": "Green.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Cyan",
+                "source": "Cyan.css",
+                "image": "Cyan.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Indigo",
+                "source": "Indigo.css",
+                "image": "Indigo.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Magenta",
+                "source": "Magenta.css",
+                "image": "Magenta.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Amber",
+                "source": "Amber.css",
+                "image": "Amber.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Turquoise",
+                "source": "Turquoise.css",
+                "image": "Turquoise.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Silver",
+                "source": "Silver.css",
+                "image": "Silver.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "AMOLED Coral",
+                "source": "Coral.css",
+                "image": "Coral.png",
+                "apiVersion": 1
+            }
+        ]
+    }
+}

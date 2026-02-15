@@ -1,0 +1,366 @@
+/*
+ *  AMOLED Dark — Minimalistic TeamSpeak Theme
+ *  Pure-black base, ultra-minimal surfaces, subtle accents.
+ */
+
+:root,
+::after,
+::before {
+  /* ── Accent (overridden per variant) ── */
+  --custom-color-accent-light: #ffffff;
+  --custom-color-accent-dark: #b0b0b0;
+  --custom-color-accent-light-t: rgba(255, 255, 255, 0.12);
+  --custom-color-accent-dark-t: rgba(255, 255, 255, 0.06);
+  --custom-color-slider1: #ffffff;
+  --custom-color-slider2: #666666;
+  --custom-color-secondary-text: #a0a0a0;
+  --custom-value-scrollbar-width: 4px;
+  --default-tsv-tint: #ffffff;
+
+  /* ── AMOLED surface scale ── */
+  --custom-value-dark1: #000000;
+  --custom-value-dark2: #050505;
+  --custom-value-dark3: #0a0a0a;
+  --custom-value-dark4: #0d0d0d;
+  --custom-value-dark5: #111111;
+  --custom-value-dark6: #141414;
+  --custom-value-dark7: #1a1a1a;
+}
+
+/* ── TeamSpeak variable mapping ── */
+
+:root,
+::after,
+::before {
+  --tsv-tint: var(--custom-color-accent-light) !important;
+  --tsv-tint2: var(--custom-color-accent-light) !important;
+  --tsv-separation-border: none !important;
+  --tsv-control-handle-active-bg: var(--custom-color-accent-light) !important;
+  --tsv-button-bg: var(--custom-value-dark5) !important;
+  --tsv-button-hover-bg: var(--custom-value-dark7) !important;
+  --ts-menu-action-color: var(--custom-color-accent-light) !important;
+
+  /* Chat */
+  --tsv-chat-remote-bg: var(--custom-value-dark3) !important;
+  --tsv-chat-self-bg: var(--custom-value-dark3) !important;
+  --tsv-chat-deleted-bg: var(--custom-value-dark3) !important;
+  --tsv-chat-deleted-font-color: #ff4455 !important;
+  --tsv-chat-link-color: var(--custom-color-accent-light) !important;
+  --tsv-chat-remote-font-color: var(--tsv-chat-self-font-color) !important;
+  --tsv-chat-self-font-color: var(--tsv-chat-self-font-color) !important;
+  --ts-chat-system-highlight-text-color: var(--custom-color-accent-light) !important;
+  --tsv-highlight-color: var(--custom-color-accent-light) !important;
+
+  /* Drag & selection */
+  --ts-drag-border: var(--custom-color-accent-light) !important;
+  --ts-select-arrow-color: var(--custom-color-accent-light) !important;
+
+  /* Typography */
+  --tsv-font-color: #e0e0e0 !important;
+  --tsv-font-subtitle-color: #777777 !important;
+  --ts-third-font-color: #f0f0f0 !important;
+
+  /* Core surfaces — pure black base */
+  --tsv-bg: var(--custom-value-dark1) !important;
+  --tsv-shaded-bg: var(--custom-value-dark1) !important;
+  --tsv-contrast-bg: var(--custom-value-dark1) !important;
+  --tsv-contrast-strong-bg: var(--custom-value-dark1) !important;
+
+  /* Context menu */
+  --ts-context-menu-background: var(--custom-value-dark3) !important;
+  --tsv-context-menu-border: var(--custom-value-dark5) !important;
+  --tsv-context-menu-item-selection: var(--custom-value-dark5) !important;
+
+  /* Header — flat, no gradient */
+  --tsv-header-bg: var(--custom-value-dark1) !important;
+  --ts-new-header-bg: var(--custom-value-dark1) !important;
+
+  /* System messages */
+  --ts-chat-system-message-bg: var(--custom-value-dark1) !important;
+  --tsv-unrelated-activity-header-bg: none !important;
+
+  /* Slider */
+  --tsv-slider-track-bg: var(--custom-value-dark3) !important;
+
+  /* Client state — flat black */
+  --tsv-client-silent--gradient-start: var(--custom-value-dark1) !important;
+  --tsv-client-silent--gradient-stop: var(--custom-value-dark1) !important;
+  --tsv-client-talking--gradient-start: var(--custom-color-accent-light) !important;
+  --tsv-client-talking--gradient-stop: var(--custom-color-accent-dark) !important;
+
+  --ts-chat-system-message-color: rgba(255, 255, 255, 0.04) !important;
+
+  /* Scrollbar */
+  --tsv-scrollbar-bg: transparent !important;
+  --tsv-scrollbar-chunks--bg-1: var(--custom-value-dark7) !important;
+  --tsv-scrollbar-chunks--bg-2: var(--custom-value-dark5) !important;
+
+  /* Misc surfaces — all flat */
+  --strong-bg: var(--custom-value-dark3) !important;
+  --tsv-button-filled-bg: var(--custom-color-accent-light) !important;
+  --tsv-button-filled-disabled-bg: var(--custom-value-dark5) !important;
+  --tsv-chat-widget-bg: var(--custom-value-dark3) !important;
+  --card-outline: var(--custom-value-dark5) !important;
+  --tsv-deviant-bg: var(--custom-value-dark3) !important;
+
+  /* Server tree — flat */
+  --tsv-servertree-bg-gradient: var(--custom-value-dark1) !important;
+  --tsv-view-header-bg: var(--custom-value-dark1) !important;
+  --tsv-view-header-gradient-start: var(--custom-value-dark1) !important;
+  --tsv-server-header-gradient-start: var(--custom-value-dark1) !important;
+  --tsv-server-header-gradient-end: var(--custom-value-dark1) !important;
+
+  /* Cards */
+  --card-background: var(--custom-value-dark3) !important;
+  --card-hover-background: var(--custom-value-dark5) !important;
+
+  /* Hero button */
+  --hero-button-background: var(--custom-color-accent-light) !important;
+
+  /* Separators — very subtle */
+  --presence-separator-presence: var(--custom-value-dark5) !important;
+  --horizontal-separator-color: var(--custom-value-dark5) !important;
+
+  /* Side bar */
+  --tsv-side-bar-bg-gradient-bottom: var(--custom-value-dark1) !important;
+  --ts-tree-badges-bg: var(--custom-value-dark5) !important;
+
+  /* Highlight */
+  --highlight-outline-color: var(--custom-color-accent-dark-t) !important;
+  --tsv-preview-bg: var(--custom-value-dark3) !important;
+  --tsv-highlight-header-bg: var(--custom-value-dark3) !important;
+}
+
+
+/* ═══════════════════════════════════════════
+   ELEMENT OVERRIDES — clean & minimal
+   ═══════════════════════════════════════════ */
+
+/* Server chat indentation */
+.tsv-activity-group-list > li li:not(:first-child) {
+  padding-left: calc(var(--tsv-padding-h) + 10px) !important;
+}
+
+/* Attachment height — keep natural */
+.ts-chat-message-attachment-myts-file.isImage {
+  height: unset !important;
+}
+.ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-image {
+  height: unset !important;
+}
+
+/* Channel background — pure black */
+.ts-server-tree-item-background-no-image {
+  background: var(--custom-value-dark1) !important;
+}
+
+/* Server tree footer separator */
+.tsv-footer::before {
+  border-top-color: var(--custom-value-dark5) !important;
+}
+
+/* Spacer — subtle dark line */
+.ts-server-tree-item-leaf.spacer .ts-server-tree-item-background-no-image,
+.ts-server-tree-item-leaf.spacer .tsv-item-highlight {
+  background: var(--custom-value-dark5) !important;
+}
+
+/* Sidebar background — flat black */
+.tsv-sidebar .tsv-body-background {
+  background: var(--custom-value-dark1) !important;
+}
+
+/* Hero button — no animation, stays minimal */
+.tsv-button-hero {
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+/* Discovery header — flat */
+.ts-discovery-header.ts-default-background {
+  background: var(--custom-value-dark1) !important;
+}
+.ts-discovery-header.ts-default-background:before {
+  -webkit-mask: none !important;
+}
+
+/* Dashboard — flat black */
+.tsv-dashboard-servers__content,
+.tsv-dashboard-chats,
+.tsv-dashboard-news,
+.ts-discovery-wrapper {
+  background: var(--custom-value-dark1) !important;
+}
+
+/* Server tree banner outline — none */
+.ts-server-header .tsv-view-banner.tsv-active .tsv-view-background::after,
+.ts-account-settings-view .tsv-view-banner.tsv-active .tsv-view-background::after {
+  border: none !important;
+}
+
+/* Link color in events */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble a {
+  color: var(--custom-color-accent-light) !important;
+}
+
+/* Attachment border — subtle */
+.ts-rendered-message:not(.ts-currently-referencing, .ts-chat-room-event-selected)
+  .ts-chat-message-attachment
+  .ts-chat-message-attachment-inner {
+  border-color: var(--custom-value-dark5) !important;
+}
+
+/* Bold */
+strong {
+  font-weight: 700 !important;
+}
+
+/* ── Reply & Edit & Mention ── */
+
+.ts-chat-room-event-bubble.self-mention {
+  --tsv-chat-link-color: #e0e0e0 !important;
+}
+
+.ts-currently-referencing .ts-chat-room-event-bubble {
+  background: var(--custom-color-accent-light) !important;
+  --tsv-chat-link-color: #000000 !important;
+}
+.ts-currently-referencing .ts-chat-room-event-bubble::before {
+  border-right: 6px solid var(--custom-color-accent-light) !important;
+}
+
+.ts-rendered-message .ts-reply .ts-reply-icon {
+  --tsv-icon-base: var(--tsv-font-subtitle-color) !important;
+}
+
+.ts-currently-referencing .ts-chat-message-attachment-footer.ts-noselect > a {
+  color: #000000 !important;
+}
+.ts-currently-referencing .ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-generic-file {
+  background: var(--custom-color-accent-dark) !important;
+}
+
+.ts-chat-room-event-selected
+  div.ts-chat-message-attachment-header
+  > div.ts-chat-message-attachment-link.ts-chat-message-attachment-header-title
+  > a {
+  color: #e0e0e0 !important;
+}
+
+/* ── Toggle ── */
+
+.ts-toggle-inner.checked:after {
+  background: var(--custom-color-accent-light) !important;
+}
+.ts-toggle.checked {
+  border: 1px solid var(--custom-color-accent-light) !important;
+}
+
+/* ── Info note ── */
+
+.tsv-server-info-footer {
+  color: var(--tsv-font-subtitle-color) !important;
+}
+
+/* ── Drag & Drop ── */
+
+.ts-dnd-drag-into:after {
+  background-color: var(--custom-color-accent-dark-t) !important;
+  border: 1px solid var(--custom-color-accent-light) !important;
+}
+
+/* ── Multiselect ── */
+
+.ts-chat-room-event-compact.ts-chat-room-event-selected .ts-chat-message-compact-container .actual:before {
+  box-shadow: 0 0 0 1px var(--custom-color-accent-dark) !important;
+  background: var(--custom-color-accent-dark) !important;
+}
+.ts-chat-room-event-selected .ts-chat-message-attachment-container .ts-chat-message-attachment-inner {
+  --room-event-highlight-border: var(--custom-color-accent-light) !important;
+  --room-event-highlight-border2: var(--custom-color-accent-dark) !important;
+  --room-event-highlight-bg: var(--custom-color-accent-dark) !important;
+  --tsv-shaded-bg-selection: var(--custom-color-accent-dark) !important;
+  background: var(--custom-color-accent-dark) !important;
+  border-color: var(--custom-color-accent-light) !important;
+}
+.ts-chat-room-event-selected:before {
+  box-shadow: 0 0 0 1px var(--custom-color-accent-dark) !important;
+  background: var(--custom-color-accent-dark) !important;
+}
+.ts-chat-room-event-selected .ts-chat-message-system-body:before {
+  background: var(--custom-color-accent-dark) !important;
+  box-shadow: 0 0 0 1px var(--custom-color-accent-dark) !important;
+}
+.ts-chat-room-event-selected .ts-chat-message-attachment-footer.ts-noselect > a {
+  color: #e0e0e0 !important;
+}
+.ts-chat-room-event-selected .ts-chat-message-attachment .ts-chat-message-attachment-inner .ts-chat-message-attachment-generic-file {
+  background: var(--custom-color-accent-dark) !important;
+  box-shadow: 0 0 0 1px var(--custom-color-accent-dark) !important;
+}
+
+/* ── Server events ── */
+
+.ts-server-events-list li.ts-event-cyan,
+.ts-server-logs-list li.ts-event-cyan {
+  border-left-color: var(--default-tsv-tint) !important;
+}
+
+/* ── Scrollbar — ultra-thin, minimal ── */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar {
+  width: var(--custom-value-scrollbar-width) !important;
+  height: 0px !important;
+}
+::-webkit-scrollbar-thumb,
+.ts-chunk-scroll-track__thumb {
+  background-color: var(--custom-value-dark7) !important;
+  border-radius: 2px;
+}
+
+/* ── Slider ── */
+
+.ts-slider-segment-value.ts-slider-segment-value-on {
+  background: var(--custom-color-accent-light) !important;
+}
+.ts-slider-segment-value.ts-slider-segment-value-off {
+  background: var(--custom-value-dark5) !important;
+}
+
+/* ── Chat input — flat, dark ── */
+
+.ts-chat-input-container.focus,
+.ts-chat-input-container:hover {
+  border: 1px solid var(--custom-value-dark7) !important;
+  background-color: var(--custom-value-dark3) !important;
+}
+.ts-chat-input-container {
+  border: 1px solid var(--custom-value-dark5) !important;
+  background-color: var(--custom-value-dark3) !important;
+}
+
+/* ── Chat bubbles — flat, dark ── */
+
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble {
+  background: var(--custom-value-dark3) !important;
+}
+.ts-chat-room-event-detailed:not(.ts-currently-referencing, .apparently-people-like-huge-faces) .ts-chat-room-event-bubble::before {
+  border-right: 6px solid var(--custom-value-dark3) !important;
+}
+
+/* Self-mention highlight */
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble.self-mention {
+  background: var(--custom-color-accent-light) !important;
+  color: #000000 !important;
+}
+.ts-chat-room-event-detailed .ts-chat-room-event-bubble.self-mention::before {
+  border-right: 6px solid var(--custom-color-accent-light) !important;
+}
+
+/* Spoiler */
+.ts-parsed-text-content .spoiler:not([visible]) {
+  background-color: #333333 !important;
+}

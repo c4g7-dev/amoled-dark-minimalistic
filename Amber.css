@@ -1,0 +1,14 @@
+@import url(TeamSpeak.css);
+@import url(Glassmorphism.css);
+
+/* AMOLED Dark — Amber accent */
+:root,
+::after,
+::before {
+     --custom-color-accent-light: #c07820;
+     --custom-color-accent-dark: #905818;
+     --custom-color-accent-light-t: rgba(192, 120, 32, 0.12);
+     --custom-color-accent-dark-t: rgba(144, 88, 24, 0.08);
+     --custom-color-slider1: #c07820;
+     --custom-color-slider2: #905818;
+}

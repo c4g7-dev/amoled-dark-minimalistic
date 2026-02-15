@@ -1,0 +1,15 @@
+@import url(TeamSpeak.css);
+@import url(Glassmorphism.css);
+
+/* AMOLED Dark — Magenta accent */
+:root,
+::after,
+::before {
+     --custom-color-accent-light: #c03080;
+     --custom-color-accent-dark: #881858;
+     --custom-color-accent-light-t: rgba(192, 48, 128, 0.12);
+     --custom-color-accent-dark-t: rgba(136, 24, 88, 0.08);
+     --custom-color-slider1: #c03080;
+     --custom-color-slider2: #881858;
+}
+
